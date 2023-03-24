@@ -1,67 +1,61 @@
 # IT314 - Software Engineering <br>
 ## Lab 5 - Static Analysis
 ****
-Name : Devdeep SHetranjiwala  
+Name : Devdeep Shetranjiwala  
 Student ID: 202001150
 ****
-Static Analysis: <br>
+> Static Analysis: <br>
 Static analysis is a method of examining the source code of a software program without
 executing it.
 
 
-Static Analysis Tools:<br>
+> Static Analysis Tools:<br>
 Static analysis tools are software tools that analyze the source code of a program without
 executing it.
 
-<br>
-List of tools:<br>
-Python:<br>
- * Mypy
- * Pylint
- * Pyflakes
- * Pycodestyle (pep8)
- * Flake8
- * Prospector
- * Bandit
-
 
 Tool of my choice for this lab : 
-Pylint
-
-how to install :
+```
+pylint
+```
+I used poweshell to do this lab.<br>
+How to install :
+```
 pip install pylint 
-
-how to use :
+```
+How to use :
+```
 python -m pylint <file name> 
+```
+For more info : 
+```
 https://pypi.org/project/pylint/
+```
 
  Github repository to analyze file : 
+   ```
 https://github.com/Devdeep-J-S/Python.git
-
+```
  There are 5 types of error : 
-Pylint category
-Description
-Convention (C)
-Programming standard violation
-Refactor (R)
-Bad code smell
-Warning (W)
-Python-specific problems
-Error (E)
-Likely code bugs
-Fatal (F)
-An error prevented further Pylint processing
+|Pylint category | Description |
+|----------------|-------------|
+|Convention (C)|Programming standard violation|
+|Refactor (R)|Bad code smell|
+|Warning (W)|Python-specific problems|
+|Error (E)|Likely code bugs|
+|Fatal (F)|An error prevented further Pylint processing|
 
 Code : 
+```
  https://github.com/Devdeep-J-S/Python/blob/master/neural_network/convolution_neural_network.py
- 
+ ```
 Output :
  ![Output of pylint](https://github.com/Devdeep-J-S/Lab-5_202001150/blob/main/images/Screenshot%20(2).png)
  
- Understanding the errors:
- As mentioned earlier in type od errors this code covers all the errors.
+ Understanding the errors:<br>
+ As mentioned earlier in type of errors this code covers most of the errors.
  Some types are mentioned here : 
- 
+ ```
  * C0116: Missing function or method docstring (missing-function-docstring)
  * C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
  * C0103: Variable name "rp" doesn't conform to snake_case naming style (invalid-name)
@@ -69,15 +63,17 @@ Output :
  * E0401: Unable to import 'matplotlib' (import-error)
  * W0105: String statement has no effect (pointless-string-statement)
  * W0612: Unused variable 'data_focus1' (unused-variable)
- 
- Another examples :
+ ```
+ ## Another examples : <br>
  Code : 
+ ```
  https://github.com/Devdeep-J-S/Python/blob/master/dynamic_programming/viterbi.py
- 
+ ```
  Output :
 ![Output](https://user-images.githubusercontent.com/75716586/227497620-4e65a097-900b-406d-b4d5-a5779ae013b6.png)
 
  Code : 
+ ```
  #!/usr/bin/env python3
 
 
@@ -120,7 +116,9 @@ if __name__ == "__main__":
     import doctest
 
     doctest.testmod()
+```
 
- Output : 
+
+ Output : <br>
 ![Output](https://user-images.githubusercontent.com/75716586/227498303-dd4dbfdc-36c8-4ecf-b912-0bd63f9576d9.png)
  
